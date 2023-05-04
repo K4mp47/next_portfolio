@@ -49,7 +49,7 @@ function App() {
           <h3 className='text-3xl text-teal-600 font-medium md:text-5xl my-5 mt-20 md:mt-10'>Personal Projects</h3>
           <p className='text-xl py-2 leading-8 text-gray-800 mx-auto md:text-2xl dark:text-white'>In this section, you can see the best results from my <span className='text-teal-500'>work</span>, I hope you will like it!</p>
           <div className='text-center'>
-            <img className='relative h-50 w-90 mx-auto rounded-md mt-10 md:h-60' src={quote} alt='first webpage'/>
+            <img className='relative h-40 w-90 mx-auto rounded-md mt-10 md:h-60' src={quote} alt='first webpage'/>
             <h2 className='text-3xl md:text-4xl text-teal-600 font-medium py-5'>Quote generator</h2>
             <p className='text-md md:text-xl pb-20 dark:text-white'>Site that generates quotes, to have a nice thought every day</p>
           </div>
