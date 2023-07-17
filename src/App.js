@@ -1,9 +1,12 @@
 import './App.css';
 import {BsFillMoonStarsFill} from 'react-icons/bs'
-import {AiFillLinkedin, AiFillInstagram, AiFillGithub} from 'react-icons/ai'
+import {AiFillLinkedin, AiFillInstagram, AiFillGithub } from 'react-icons/ai'
+import { FaReact, FaPython, FaJs, FaHtml5, } from 'react-icons/fa';
+import { SiFlask } from 'react-icons/si';
 import avatar from './avatar.png'
 import quote from './quote.png'
 import { useState } from 'react';
+
 // remember that we have to set the font, here and in taiwind.config.js
 
 function App() {
@@ -28,9 +31,9 @@ function App() {
             </p>
           </div>
           <div className='text-5xl flex justify-center gap-16 py-5'>
-            <a href="https://www.linkedin.com/in/alberto-campagnolo-916b86265/"><AiFillLinkedin/></a>
-            <a href="https://www.instagram.com/campagnoloalberto5/"><AiFillInstagram/></a>
-            <a href="https://github.com/K4mp47"><AiFillGithub/></a>
+            <a href="https://www.linkedin.com/in/alberto-campagnolo-916b86265/"><AiFillLinkedin className='animate-pulse animation-delay-400'/></a>
+            <a href="https://www.instagram.com/campagnoloalberto5/"><AiFillInstagram className='animate-pulse'/></a>
+            <a href="https://github.com/K4mp47"><AiFillGithub className='animate-pulse animation-delay-900'/></a>
           </div>
           <div className='relative w-60 h-60 my-20 mx-auto'>
             <img src={avatar} alt="Avatar"/>
@@ -39,10 +42,41 @@ function App() {
         <div className='text-center'>
           <h3 className='text-3xl py-5 text-teal-600 font-medium md:text-5xl'>Services I offer</h3>
           <p className='text-xl py-2 leading-8 text-gray-800 md:mx-20 lg:mx-40 md:text-2xl dark:text-white'>
-            Since the beginning of my journey as a freelance developer, I've done work for <span className='text-teal-500'>startups</span> and <span className='text-teal-600'>agencies</span> and collaborated with people to create digital products for business and consumer use.
+            Since the beginning of my journey as a developer, I've done work for <span className='text-teal-500'>Elettronica Veneta S.P.A</span> and collaborated with people to create digital products for business and consumer use.
           </p>
-          <p className='text-md py-2 leading-8 text-gray-800 md:text-xl dark:text-white'>
-            I offer a wide range of services, including programming and teaching.
+          <p className='text-xl py-2 leading-8 text-gray-800 md:text-2xl dark:text-white'>
+          I can program in different languages:
+          </p>
+          <ul className='text-xl py-2 leading-8 text-gray-800 md:text-2xl dark:text-white block items-center justify-center mt-12'>
+            <li>
+              <div className='flex items-center justify-center mb-5 animate-bounce animation-duration'>
+                <FaReact className='w-10 h-10 ml-2 mr-2 text-teal-500'/> React
+              </div>
+            </li>
+            <li>
+              <div className='flex items-center justify-center mb-5 animate-bounce animation-delay-100'>
+                <FaPython className='w-10 h-10 ml-2 mr-2 text-teal-500'/> Python
+              </div>
+            </li>
+            <li>
+              <div className='flex items-center justify-center mb-5 animate-bounce'>
+                <SiFlask className='w-10 h-10 ml-2 mr-2 text-teal-500'/> Flask
+              </div>
+            </li>
+            <li>
+              <div className='flex items-center justify-center mb-5 animate-bounce animation-delay-200'>
+                <FaHtml5 className='w-10 h-10 ml-2 mr-2 text-teal-500'/> Html
+              </div>
+            </li>
+            <li>
+              <div className='flex items-center justify-center animate-bounce animation-delay-700'>
+                <FaJs className='w-10 h-10 ml-2 mr-2 text-teal-500'/> Javascript
+              </div>
+            </li>
+          </ul>
+          <br/>
+          <p className='m-9 text-xl py-2 leading-8 text-gray-800 md:text-2xl dark:text-white'>
+            So what i can do for you is creating the <span className='text-teal-500'>API</span> and <span className='text-teal-500'>Website</span> that you need!
           </p>
         </div>
         <div className='text-center'>
