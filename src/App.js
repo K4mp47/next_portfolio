@@ -4,6 +4,7 @@ import {AiFillLinkedin, AiFillInstagram, AiFillGithub } from 'react-icons/ai'
 import { FaReact, FaPython, FaJs, FaHtml5, } from 'react-icons/fa';
 import { SiFlask } from 'react-icons/si';
 import avatar from './avatar.png'
+import personal_face from './personal_face.jpg';
 import quote from './quote.png'
 import { useState } from 'react';
 
@@ -11,6 +12,12 @@ import { useState } from 'react';
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
+  const [showAvatar, setShowAvatar] = useState(true);
+
+  const toggleAvatar = () => {
+    setShowAvatar(!showAvatar);    
+  };
+
   return (
     <div className={darkMode? 'dark' : ''}>
       <main className='transition duration-1000 bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900 dark:text-white'>
@@ -23,7 +30,7 @@ function App() {
               </li>
             </ul>
           </nav>
-          <h2 className='text-5xl text-teal-600 p-0 font-medium md:text-6xl mx-auto text-center'>Campagnolo Alberto</h2>
+          <h2 className='text-5xl text-teal-600 p-0 font-medium md:text-6xl mx-auto text-center animate-pulse animation-delay-75'>Campagnolo Alberto</h2>
           <div className='text-center p-5 py-5'>
             <h3 className='text-2xl py-2 pt-5'>Freelance developer.</h3>
             <p className='text-md py-5 leading-8 text-gray-800 dark:text-white'>
@@ -35,12 +42,12 @@ function App() {
             <a href="https://www.instagram.com/campagnoloalberto5/"><AiFillInstagram className='animate-pulse'/></a>
             <a href="https://github.com/K4mp47"><AiFillGithub className='animate-pulse animation-delay-900'/></a>
           </div>
-          <div className='relative w-60 h-60 my-20 mx-auto'>
-            <img src={avatar} alt="Avatar"/>
+          <div className='relative w-60 h-60 my-20 mx-auto transition-transform transform' onClick={toggleAvatar}>
+              <img src={showAvatar ? avatar : personal_face} alt="Avatar" className={`w-full h-full object-cover rounded-md ${showAvatar ? '' : 'scale-110' } transition-all duration-500`}/>
           </div>
         </section>
         <div className='text-center'>
-          <h3 className='text-3xl py-5 text-teal-600 font-medium md:text-5xl'>Services I offer</h3>
+          <h3 className='text-3xl py-5 text-teal-600 font-medium md:text-5xl animate-pulse animation-delay-75'>Services I offer</h3>
           <p className='text-xl py-2 leading-8 text-gray-800 md:mx-20 lg:mx-40 md:text-2xl dark:text-white'>
             Since the beginning of my journey as a developer, I've done work for <span className='text-teal-500'>Elettronica Veneta S.P.A</span> and collaborated with people to create digital products for business and consumer use.
           </p>
@@ -76,7 +83,7 @@ function App() {
           </ul>
           <br/>
           <p className='m-9 text-xl py-2 leading-8 text-gray-800 md:text-2xl dark:text-white'>
-            So what i can do for you is creating the <span className='text-teal-500'>API</span> and <span className='text-teal-500'>Website</span> that you need!
+            So what i can do for you is create the <span className='text-teal-500'>API</span> and <span className='text-teal-500'>Website</span> that you need!
           </p>
         </div>
         <div className='text-center'>
