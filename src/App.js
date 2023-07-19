@@ -5,7 +5,6 @@ import { FaReact, FaPython, FaJs, FaHtml5, } from 'react-icons/fa';
 import { SiFlask } from 'react-icons/si';
 import avatar from './avatar.png'
 import personal_face from './personal_face.jpg';
-import quote from './quote.png'
 import { useState } from 'react';
 
 // remember that we have to set the font, here and in taiwind.config.js
@@ -88,11 +87,14 @@ function App() {
         </div>
         <div className='text-center'>
           <h3 className='text-3xl text-teal-600 font-medium md:text-5xl my-5 mt-20 md:mt-10'>Personal Projects</h3>
-          <p className='text-xl py-2 leading-8 text-gray-800 mx-auto md:text-2xl dark:text-white'>In this section, you can see the best results from my <span className='text-teal-500'>work</span>, I hope you will like it!</p>
-          <div className='text-center'>
-            <img className='relative h-40 w-90 mx-auto rounded-md mt-10 md:h-60' src={quote} alt='first webpage'/>
-            <h2 className='text-3xl md:text-4xl text-teal-600 font-medium py-5'>Quote generator</h2>
-            <p className='text-md md:text-xl pb-20 dark:text-white'>Site that generates quotes, to have a nice thought every day</p>
+          <p className='text-xl py-2 leading-8 text-gray-800 mx-auto md:text-2xl dark:text-white mb-20'>In this section, you can see the best results from my <span className='text-teal-500'>work</span>, I hope you will like it!</p>
+          <div className='text-center mx-20'>
+            <h2 className='text-3xl md:text-4xl text-teal-600 font-medium py-5 animate-pulse animation-delay-75'><a href='https://github.com/K4mp47/Flask_mega_tutorial_book'>- Microblog</a></h2>
+            <p className='text-md md:text-xl pb-20 dark:text-white'>My small project created to learn how to use flask and its power!!</p>
+            <h2 className='text-3xl md:text-4xl text-teal-600 font-medium py-5 animate-pulse animation-delay-75'><a href='https://github.com/K4mp47/personal_web_projects'>- Website Tests</a></h2>
+            <p className='text-md md:text-xl pb-20 dark:text-white'>All my project in front-end developing!</p>
+            <h2 className='text-3xl md:text-4xl text-teal-600 font-medium py-5 animate-pulse animation-delay-75'><a href='https://github.com/K4mp47/PEL/tree/main'>- JSON Parser</a></h2>
+            <p className='text-md md:text-xl pb-20 dark:text-white'>From a project inside my university!</p>
           </div>
         </div>
       </main>
